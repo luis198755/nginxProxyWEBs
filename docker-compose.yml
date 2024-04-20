@@ -38,6 +38,18 @@ services:
     volumes:
       - ./Luis:/usr/share/nginx/html
       
+  webluisportfolio:
+    build: .
+    restart: always
+    expose:
+      - '84:80'
+    environment:
+      - VIRTUAL_HOST=pf.luissalberto.com
+      - LETSENCRYPT_HOST=pf.luissalberto.com
+      - LETSENCRYPT_EMAIL=luis@pf.luissalberto.com
+    volumes:
+      - ./portFolioLuis:/usr/share/nginx/html
+      
   webcrepas:
     build: .
     restart: always
