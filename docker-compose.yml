@@ -32,9 +32,9 @@ services:
     expose:
       - '85:80'
     environment:
-      - VIRTUAL_HOST=test.key-city.com
-      - LETSENCRYPT_HOST=test.key-city.com
-      - LETSENCRYPT_EMAIL=diego@key-city.com
+      - VIRTUAL_HOST=luissalberto.com
+      - LETSENCRYPT_HOST=luissalberto.com
+      - LETSENCRYPT_EMAIL=diego@luissalberto.com
     volumes:
       - ./Luis:/usr/share/nginx/html
       
@@ -44,9 +44,9 @@ services:
     expose:
       - '86:80'
     environment:
-      - VIRTUAL_HOST=second.key-city.com
-      - LETSENCRYPT_HOST=second.key-city.com
-      - LETSENCRYPT_EMAIL=info@key-city.com
+      - VIRTUAL_HOST=la56-b.com
+      - LETSENCRYPT_HOST=la56-b.com
+      - LETSENCRYPT_EMAIL=blanca@la56-b.com
     volumes:
       - ./Crepas:/usr/share/nginx/html
 
